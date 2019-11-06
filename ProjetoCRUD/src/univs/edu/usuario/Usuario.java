@@ -1,40 +1,40 @@
 package univs.edu.usuario;
 
+import static antlr.ANTLRTokdefParserTokenTypes.ID;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Usuario {
-    
+    @Id
+    @GeneratedValue
     private int idUsuario;
-    
+    @Column(length = 100, nullable = false)
     private String nome;
-    
+    @Column(length = 100, nullable = false, unique = true)
     private String login;
-    
+    @Column(length = 100, nullable = false)
     private String senha;
     
 
-    /**
-     * @return the idUsuario
-     */
+    
     public int getIdUsuario() {
         return idUsuario;
     }
 
-    /**
-     * @param idUsuario the idUsuario to set
-     */
+    
     public void setIdUsuario(int idUsuario) {
         this.idUsuario = idUsuario;
     }
 
-    /**
-     * @return the nome
-     */
+    
     public String getNome() {
         return nome;
     }
 
-    /**
-     * @param nome the nome to set
-     */
+    
     public void setNome(String nome) {
         this.nome = nome;
     }
