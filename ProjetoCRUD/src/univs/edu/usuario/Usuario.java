@@ -11,12 +11,16 @@ public class Usuario {
     @Id
     @GeneratedValue
     private int idUsuario;
+    
     @Column(length = 100, nullable = false)
     private String nome;
+    
     @Column(length = 100, nullable = false, unique = true)
     private String login;
+    
     @Column(length = 100, nullable = false)
     private String senha;
+    
     
 
     
