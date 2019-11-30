@@ -7,7 +7,7 @@ package univs.edu.telas;
 
 /**
  *
- * @author LABORATORIO 01
+ * @author adrianolimacandido
  */
 public class MenuPrincipal extends javax.swing.JFrame {
 
@@ -34,9 +34,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jMenu1.setText("Cadratros");
+        jMenu1.setText("Cadastros");
 
-        jMenuItem1.setText("Usuario");
+        jMenuItem1.setText("Usuário");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem1ActionPerformed(evt);
@@ -59,7 +59,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 279, Short.MAX_VALUE)
+            .addGap(0, 278, Short.MAX_VALUE)
         );
 
         pack();
@@ -67,8 +67,8 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-    TelaUsuario tela = new TelaUsuario();
-    tela.setVisible(true);
+        TelaUsuario tela = new TelaUsuario();
+        tela.setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     /**
